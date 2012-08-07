@@ -22,7 +22,7 @@ var load_slider = function(){
 	$.each(Galleries, function(key, gallery) {
 		$("#galleries").append('<a href="javascript:;" data-slide="' + ($('img', slider).length+1) + '" class="numbers toSlide">' + gallery.title + '<span>&ndash;&nbsp;' +gallery.images.length + ' items</span>' + '</a>');
 		$.each(gallery.images, function(k, item) {
-			slider.append('<img src="images_' + size + '/' + item.uri + '" alt="' + item.title + '" title="' + item.title + '" />');
+			slider.append('<img src="images_' + size + '/' + item.file + '" alt="' + item.title + '" title="' + item.title + '" />');
 		});
 	});
 	slider.nivoSlider({
