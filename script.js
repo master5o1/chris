@@ -11,9 +11,8 @@ $.getScript = function(url, callback, cache){
 $(window).load(function() {
 	load_slider();
 	//$.getScript('jquery.nivo.slider.js', load_slider, true);
-
 	$('.overlay').each(function(k, v) {
-		$('#overlay-links').append('<a href="javascript:;" class="reveal-overlay" data-page="' + $(v).data('overlay-title') + '">' + $(v).data('overlay-title') + '</a>');
+		$('#overlay-links').append('<a href="#/' + $(v).data('overlay-title') + '" class="reveal-overlay" data-page="' + $(v).data('overlay-title') + '">' + $(v).data('overlay-title') + '</a>');
 	});
 	$(window).click(function(e) {
 		if ($('.overlay').has(e.target).length === 0 && $('.reveal-overlay').is(e.target) === false) {
@@ -24,10 +23,13 @@ $(window).load(function() {
 		$('[data-overlay-title="' + $(this).data('page') + '"]').fadeIn(250);
 		$('.overlay').not('[data-overlay-title="' + $(this).data('page') + '"]').fadeOut(250);
 	});
+	if (window.location.hash.length > 0) {
+		$('a.reveal-overlay[data-page="' + window.location.hash.substring(2) + '"]').trigger('click');
+	}
 });
 
 var load_slider = function(){
-	var slider = $('#slider');	
+	var slider = $('#slider');
 	var size = "small";
 	if ($(window).height() >= 850) {
 		size = "large";
