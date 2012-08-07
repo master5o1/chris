@@ -2,6 +2,7 @@ var Galleries = [
 	{
 		title: "2012 &ndash;",
 		images: [
+			{ file: "img10.jpg", title: "Spring Afternoon, Dominion Road; 2010. C-print, 149 x 288.5 cm [1100px by 557px]" },
 		]
 	},
 	{
