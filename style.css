@@ -81,6 +81,7 @@ a:hover {
 	height: 1.0em;
 	display: inline-block;
 	visibility: hidden;
+	float: right;
 	opacity: 0;
 	transition: opacity 500ms;
 	-webkit-transition: opacity 500ms;
@@ -122,3 +123,29 @@ a:hover {
 	display: inline-block;
 	vertical-align: top;
 }
+
+.overlay {
+	display: none;
+	position: fixed;
+	left: 210px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 5000;
+	background: rgba(255,255,255,0.85);
+}
+
+.overlay div {
+	width: 850px;
+	position: fixed;
+	top: 40px;
+	bottom: 40px;
+	overflow: auto;
+	background: rgba(255,0,255,0.1);
+}
+
+
+
+
+
+
