@@ -106,6 +106,17 @@ a:hover {
 	left: 0;
 }
 
+div#whiteout {
+	display: none;
+	background: rgba(255,255,255,0.7);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 50;
+}
+
 #zoom {
 	display: none;
 	width: 100%;
@@ -191,8 +202,8 @@ a:hover {
 	position: relative;
 	top: 40px;
 	min-height: 550px;
-	padding: 30px 0 0 0;
-	background: rgba(255,255,255,0.85);
+	padding: 30px 0 1px 0; /* 1px makes the margin work for the final div/p take inside this. */
+	background: rgba(240,240,240,0.85);
 	
 }
 
@@ -210,12 +221,12 @@ a:hover {
 	font-size: 12pt;
 	font-weight: normal;
 	text-transform: lowercase;
-	padding: 0 0  1.0em 270px;
+	padding: 0 0  1.0em 180px;
 	margin: 0;
 }
 
 .overlay div.inside div.section {
-	padding: 0 0 0 270px;
+	padding: 0 80px 0 180px;
 	margin: 0 0 2.5em 0;
 }
 
