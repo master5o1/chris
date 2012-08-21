@@ -117,13 +117,13 @@ var load_slider = function(){
 		$('#zoomarea').css('margin', '0 auto');
 		var options = [
 			"zLogoVisible=0",
-			"zNavigatorVisible=3",
+			"zNavigatorVisible=1",
 			"zNavigatorWidth=100",
 			"zNavigatorHeight=" + (100 * $('#zoomarea').height() / $('#zoomarea').width()),
 			"zNavigatorLeft=5",
 			"zNavigatorTop=5",
 			"zFullPageVisible=0",
-			"zToolbarVisible=3",
+			"zToolbarVisible=1",
 		];
 		var image = $('.displayed').attr('src').replace(/^.*[\\\/]/, '');
 		if ($.firstOne == 0) {
