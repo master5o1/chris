@@ -117,53 +117,6 @@ div#whiteout {
 	z-index: 50;
 }
 
-#zoom {
-	display: none;
-	width: 100%;
-	height: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.95);
-	z-index: 5000;
-	text-align: center;
-}
-
-#zoomclose {
-	position: absolute;
-	display: inline-block;
-	top: 0;
-	width: 100%;
-	margin: 0 auto;
-	line-height: 40px;
-	font-size: 0.85em;
-	color: #fff;
-}
-
-#zoomcaption {
-	position: fixed;
-	display: inline-block;
-	bottom: 0;
-	width: 100%;
-	margin: 0 auto;
-	line-height: 40px;
-	font-size: 1.0em;
-	color: #fff;
-}
-
-#zoom div img {
-	display: none;
-	margin: 0;
-	padding: 0;
-}
-
-#zoom div {
-	cursor: crosshair;
-	margin: 0 auto;
-	background-position: center;
-	overflow: hidden;
-}
-
 #right {
 	display: inline-block;
 	margin: 0;
@@ -243,7 +196,35 @@ div#whiteout {
 	margin: 0;
 }
 
+#zoom {
+	display: none;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.95);
+	z-index: 5000;
+	text-align: center;
+}
 
+#zoomcaption {
+	position: fixed;
+	display: inline-block;
+	bottom: 0;
+	width: 100%;
+	margin: 0 auto;
+	line-height: 40px;
+	font-size: 1.0em;
+	color: #fff;
+}
+
+#zoomarea {
+	width: 800px;
+	height: 400px;
+	margin: 40px;
+	border: none;
+}
 
 
 
