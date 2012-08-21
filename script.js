@@ -119,7 +119,7 @@ var load_slider = function(){
 			"zLogoVisible=0",
 			"zNavigatorVisible=5",
 			"zNavigatorWidth=100",
-			"zNavigatorHeight=" + (100 * $('#zoomarea').width() / $('#zoomarea').height()),
+			"zNavigatorHeight=" + (100 * $('#zoomarea').height() / $('#zoomarea').width()),
 			"zFullPageVisible=0",
 			"zToolbarVisible=3",
 		];
