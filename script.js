@@ -108,7 +108,6 @@ var load_slider = function(){
 	});
 	
 	$('img', slider).click(function() {
-		$('#zoomclose').css('left', Math.ceil(($(window).width() - $('#zoomclose').width()) / 2));
 		$('#zoom').fadeIn(180);
 		$('#zoomarea').height($(window).height());
 		$('#zoomarea').width($('#zoomarea').height() * $('.displayed').width()/$('.displayed').height());
@@ -119,8 +118,8 @@ var load_slider = function(){
 			"zNavigatorVisible=1",
 			"zNavigatorWidth=100",
 			"zNavigatorHeight=" + (100 * $('#zoomarea').height() / $('#zoomarea').width()),
-			"zNavigatorLeft=5",
-			"zNavigatorTop=5",
+			"zNavigatorLeft=10",
+			"zNavigatorTop=10",
 			"zFullPageVisible=0",
 			"zToolbarVisible=1",
 		];
