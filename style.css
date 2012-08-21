@@ -208,6 +208,17 @@ div#whiteout {
 	text-align: center;
 }
 
+#zoomclose {
+	position: relative;
+	z-index: 500;
+	margin: 0 auto;
+	font-size: 1.0em;
+	line-height: 2.0em;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	text-align: center;
+}
+
 #zoomcaption {
 	position: fixed;
 	display: inline-block;

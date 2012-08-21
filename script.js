@@ -111,15 +111,17 @@ var load_slider = function(){
 		$('#zoom').fadeIn(180);
 		$('#zoomarea').height($(window).height());
 		$('#zoomarea').width($('#zoomarea').height() * $('.displayed').width()/$('.displayed').height());
-		if ($('#zoomarea').width() > $(window).width()) {
+		//if ($('#zoomarea').width() > $(window).width()) {
 			$('#zoomarea').width($(window).width());
-		}
+		//}
 		$('#zoomarea').css('margin', '0 auto');
 		var options = [
 			"zLogoVisible=0",
-			"zNavigatorVisible=5",
+			"zNavigatorVisible=3",
 			"zNavigatorWidth=100",
 			"zNavigatorHeight=" + (100 * $('#zoomarea').height() / $('#zoomarea').width()),
+			"zNavigatorLeft=5",
+			"zNavigatorTop=5",
 			"zFullPageVisible=0",
 			"zToolbarVisible=3",
 		];
