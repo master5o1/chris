@@ -120,7 +120,7 @@ var load_slider = function(){
 			"zNavigatorVisible=0",
 			"zFullPageVisible=0",
 			"zToolbarVisible=3",
-			"zSkinPath=Assets/Skins/Default/Large",
+			"zSkinPath=Assets/Skins/Dark",
 		];
 		var image = $('.displayed').attr('src').replace(/^.*[\\\/]/, '');
 		if ($.firstOne == 0) {
