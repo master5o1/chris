@@ -109,18 +109,19 @@ var load_slider = function(){
 	
 	$('img', slider).click(function() {
 		$('#zoom').fadeIn(180);
-		$('#zoomarea').height($(window).height() - 80);
+		$('#zoomarea').height($(window).height() - 1);
 		$('#zoomarea').width($('#zoomarea').height() * $('.displayed').width()/$('.displayed').height());
 		if ($('#zoomarea').width() > $(window).width() - 80) {
 			$('#zoomarea').width($(window).width() - 80);
 		}
-		$('#zoomarea').css('margin', '40px auto');
+		$('#zoomarea').css('margin', '0 auto');
 		var options = [
 			"zLogoVisible=0",
-			"zNavigatorVisible=0",
+			//"zNavigatorVisible=0",
+			"zNavigatorWidth=100",
+			"zNavigatorHeight=" + (100 * $('#zoomarea').width() / $('#zoomarea').height()),
 			"zFullPageVisible=0",
 			"zToolbarVisible=3",
-			"zSkinPath=Assets/Skins/Light",
 		];
 		var image = $('.displayed').attr('src').replace(/^.*[\\\/]/, '');
 		if ($.firstOne == 0) {
