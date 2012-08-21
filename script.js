@@ -40,6 +40,7 @@ $(window).load(function() {
 });
 
 var traverse = function(direction, slide) {
+	var slider = $('#slider');
 	var count = $('*', slider).length;
 	var next = 0;
 	var current = 0;
@@ -55,8 +56,6 @@ var traverse = function(direction, slide) {
 	if (direction == 0) {
 		next = slide -1;
 	}
-	
-	console.log(current, next, direction, slide);
 	
 	$('#caption p').fadeOut(0);
 	$('*', slider).eq(current).fadeOut(180);
