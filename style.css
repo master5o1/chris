@@ -224,6 +224,7 @@ div#whiteout {
 	border-radius: 3px;
 	color: #fff;
 	text-align: center;
+	cursor: pointer;
 }
 
 #zoomcaption {
