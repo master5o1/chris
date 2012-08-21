@@ -116,9 +116,11 @@ var load_slider = function(){
 		}
 		$('#zoomarea').css('margin', '40px auto');
 		var options = [
-			"zToolbarVisible=1",
 			"zLogoVisible=0",
 			"zNavigatorVisible=0",
+			"zFullPageVisible=0",
+			"zToolbarVisible=3",
+			"zSkinPath=Assets/Skins/Default/Large",
 		];
 		var image = $('.displayed').attr('src').replace(/^.*[\\\/]/, '');
 		if ($.firstOne == 0) {
