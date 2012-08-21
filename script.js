@@ -108,12 +108,11 @@ var load_slider = function(){
 	});
 	
 	$('img', slider).click(function() {
+		$('#zoomclose').css('left', Math.ceil(($(window).width() - $('#zoomclose').width()) / 2));
 		$('#zoom').fadeIn(180);
 		$('#zoomarea').height($(window).height());
 		$('#zoomarea').width($('#zoomarea').height() * $('.displayed').width()/$('.displayed').height());
-		//if ($('#zoomarea').width() > $(window).width()) {
-			$('#zoomarea').width($(window).width());
-		//}
+		$('#zoomarea').width($(window).width());
 		$('#zoomarea').css('margin', '0 auto');
 		var options = [
 			"zLogoVisible=0",
