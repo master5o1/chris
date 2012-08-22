@@ -145,8 +145,6 @@ var load_slider = function(){
 		}
 		Z.initialize();
 		$('#zoom').fadeIn(250);
-		var title = '<span class="blue" style="font-weight: bold;">' + $('.displayed', slider).attr('title').split('; ')[0] + '</span>, ' + $('.displayed', slider).attr('title').split('; ')[1];
-		$('#zoomcaption').fadeOut(0).html(title);//.delay(60).fadeIn(180);
 	});
 	
 	$('#zoomarea').clickOutside(function(e) {

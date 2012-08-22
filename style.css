@@ -231,17 +231,6 @@ div#whiteout {
 	cursor: pointer;
 }
 
-#zoomcaption {
-	position: fixed;
-	display: inline-block;
-	bottom: 0;
-	width: 100%;
-	margin: 0 auto;
-	line-height: 40px;
-	font-size: 1.0em;
-	color: #fff;
-}
-
 #zoomarea {
 	width: 800px;
 	height: 400px;
