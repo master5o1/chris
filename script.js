@@ -144,10 +144,6 @@ var load_slider = function(){
 			Z.Viewer.setSizeAndPosition($('#zoomarea').width(), $('#zoomarea').height(), 0);
 		}
 		Z.initialize();
-		console.log($('#ToolbarDisplay'));
-		$('#ToolbarDisplay').css('right', 0);
-		$('#ToolbarDisplay').css('left', 'auto');
-		console.log($('#ToolbarDisplay'));
 		$('#zoom').fadeIn(250);
 	});
 	
