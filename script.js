@@ -145,7 +145,8 @@ var load_slider = function(){
 		}
 		Z.initialize();
 		console.log($('#ToolbarDisplay'));
-		$('#ToolbarDisplay').css('left', 500);
+		$('#ToolbarDisplay').css('right', 0);
+		$('#ToolbarDisplay').css('left', 'auto');
 		console.log($('#ToolbarDisplay'));
 		$('#zoom').fadeIn(250);
 	});
