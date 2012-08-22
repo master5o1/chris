@@ -1,3 +1,4 @@
+
 <!-- SKIN0 through SKIN39 are required unless JavaScript in the file "ZoomifyImageViewer.js" is 
       changed.  SKIN0 through SKIN51 are required if using Edit Mode (implemented with zEditMode 
       and zSaveHandlerPath parameters). Skin file names such as "toolbarBackground.png" may be 
@@ -14,7 +15,7 @@
 
 <SKINDATA>	
 	<SETUP
-		SKINMODE="0" 
+		SKINMODE="2" 
 		FOLDERSTANDARD="standard"
 		FOLDERLARGE="large" />
 	<SIZESSTANDARD
@@ -36,23 +37,23 @@
 		PROGRESSH="20"
 		PROGRESSFONTSIZE="12" />
 	<SIZESLARGE
-		TOOLBARW="-1"
-		TOOLBARH="40"
-		LOGOW="60"
-		LOGOH="50"
+		TOOLBARW="500"
+		TOOLBARH="23"
+		LOGOW="29"
+		LOGOH="25"
 		DIVIDERW="9"
-		DIVIDERH="35"
-		BUTTONW="30"
-		BUTTONH="30"
-		BUTTONSPAN="42"
-		SLIDERBUTTONW="23"
-		SLIDERBUTTONH="29"
-		SLIDERTRACKW="180"
-		SLIDERTRACKH="45"
-		SLIDERSPAN="184"
-		PROGRESSW="80" 
-		PROGRESSH="30"
-		PROGRESSFONTSIZE="24" />
+		DIVIDERH="23"
+		BUTTONW="17"
+		BUTTONH="17"
+		BUTTONSPAN="25"
+		SLIDERBUTTONW="18"
+		SLIDERBUTTONH="18"
+		SLIDERTRACKW="130"
+		SLIDERTRACKH="25"
+		SLIDERSPAN="120"
+		PROGRESSW="35" 
+		PROGRESSH="25"
+		PROGRESSFONTSIZE="12" />
 	<FILES
 		SKIN0="toolbarBackground.png"
 		SKIN1="toolbarLogo.png"
