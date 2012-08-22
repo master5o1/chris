@@ -156,6 +156,7 @@ div#whiteout {
 	top: 40px;
 	min-height: 250px;
 	padding: 30px 0 1px 0; /* 1px makes the margin work for the final div/p take inside this. */
+	background: #eee;
 	background: rgba(240,240,240,0.85);
 	
 }
@@ -203,6 +204,7 @@ div#whiteout {
 	position: fixed;
 	top: 0;
 	left: 0;
+	background: #222;
 	background: rgba(0,0,0,0.95);
 	z-index: 5000;
 	text-align: center;
@@ -217,6 +219,8 @@ div#whiteout {
 	padding: 0.3em;
 	font-weight: bold;
 	font-size: 0.9em;
+	border: solid 1px #eee;
+	background: #000;
 	background: rgba(0,0,0,0.85);
 	-moz-border-radius: 3px;
 	-webkit-border-radius: 3px;

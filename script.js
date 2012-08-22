@@ -1,3 +1,11 @@
+/*
+Project: Chris Corson-Scott's website
+Developer: Jason Schwarzenberger (http://master5o1.com/)
+Date: August 2012
+Copyright (c) 2012 Jason Schwarzenberger
+*/
+
+// Found this on Stack Exchange: http://stackoverflow.com/a/3234741
 $.fn.extend({
 	clickOutside: function(handler, exceptions) {
 		var $this = this;
@@ -23,12 +31,14 @@ $(window).load(function() {
 	$('.overlay').each(function(k, v) {
 		$('#overlay-links').append('<a href="#/' + $(v).data('overlay-title') + '" class="reveal-overlay" data-page="' + $(v).data('overlay-title') + '">' + $(v).data('overlay-title') + '</a>');
 	});
-	$(window).click(function(e) {
-		if ($('.overlay').has(e.target).length === 0 && $('.reveal-overlay').is(e.target) === false) {
+	
+	$('.overlay').clickOutside(function(e) {
+		if (!$(e.target).is('.reveal-overlay')) {
 			$('.overlay').fadeOut(250);
 			$('#whiteout').fadeOut(250);
 		}
 	});
+	
 	$('.reveal-overlay').click(function() {
 		$('[data-overlay-title="' + $(this).data('page') + '"]').fadeIn(250);
 		$('#whiteout').fadeIn(250);
@@ -78,10 +88,13 @@ var load_slider = function(){
 		size = "large";
 	}
 	$.each(Galleries, function(key, gallery) {
+		if (typeof gallery == 'undefined') return;
 		$("#galleries").append('<a href="javascript:;" data-slide="' + ($('img', slider).length+1) + '" class="numbers toSlide">' + gallery.title + '<span>&larr;&nbsp;' +gallery.images.length + ' items</span>' + '</a>');
 		$.each(gallery.images, function(k, item) {
 			var className = '';
-			if ($('*', slider).length == 0) className = 'displayed';
+			if ($('*', slider).length == 0)
+				className = 'displayed';
+			if (typeof item == 'undefined') return;
 			slider.append('<img class="' + className + '" src="images_' + size + '/' + item.file + '" alt="' + item.title + '" title="' + item.title + '" />');
 		});
 	});
