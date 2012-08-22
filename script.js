@@ -33,7 +33,7 @@ $(window).load(function() {
 	});
 	
 	$('.overlay').clickOutside(function(e) {
-		if (!$(e.target).is('.reveal-overlay') && !$('.overlay').contains(e.target)) {
+		if ($('.overlay').has(e.target).length === 0 && $('.reveal-overlay').is(e.target) === false) {
 			$('.overlay').fadeOut(250);
 			$('#whiteout').fadeOut(250);
 		}
